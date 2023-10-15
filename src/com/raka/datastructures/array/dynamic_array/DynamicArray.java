@@ -1,4 +1,4 @@
-package com.raka.datastructures.array;
+package com.raka.datastructures.array.dynamic_array;
 
 public class DynamicArray {
     private int[] array;            //dynamic array
