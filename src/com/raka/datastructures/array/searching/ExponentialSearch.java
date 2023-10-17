@@ -7,17 +7,17 @@ public class ExponentialSearch {
     public static int searchElement(int[] array, int key){
         int length = array.length;
 
-        if(array[0] == key){
+        if(array[0] == key){            // checking if first element equals key
             return 0;
         }
 
         int endIndex = 1;
-        while(endIndex < length-1 && array[endIndex] < key){
-            endIndex = endIndex * 2;
+        while(endIndex < length-1 && array[endIndex] < key){        // while index range less than length-1, and element at last index of range less than key
+            endIndex = endIndex * 2;                // doubles the search range by extending the last index
         }
 
-        int lb = endIndex/2;
-        int ub = Math.min(endIndex, length-1);
+        int lb = endIndex/2;            // since element is not found in previous range, so it must be after half of current range
+        int ub = Math.min(endIndex, length-1);      // checks for out of bound index
         int mid;
 
         while(lb <= ub){
