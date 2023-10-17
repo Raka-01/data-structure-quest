@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class BinarySearchRecursive {
 
-    public static int searchElement(int[] array, int lb, int ub, int key){
-        if(lb <= ub){                   // case '=' when lb == ub as set and called from within the method
-            int mid = lb + (ub - lb)/2;
+    public static int searchElement(int[] array, int lb, int ub, int key) {
+        if (lb <= ub) {                   // case '=' when lb == ub as set and called from within the method
+            int mid = lb + (ub - lb) / 2;
 
-            if(array[mid] == key){
+            if (array[mid] == key) {
                 return mid;
             } else if (array[mid] < key) {
                 lb = mid + 1;
@@ -25,7 +25,7 @@ public class BinarySearchRecursive {
         int[] array = {10, 12, 13, 17, 18, 22, 25, 29, 35, 38, 44, 48, 55};
 
         System.out.println("Original array - ");
-        for(int element : array){
+        for (int element : array) {
             System.out.print(element + "   ");
         }
 
@@ -33,19 +33,21 @@ public class BinarySearchRecursive {
         System.out.println("Enter the element to search");
         int key = input.nextInt();
 
-        int index = searchElement(array, 0, array.length-1, key);
-        if(index > -1){
+        int index = searchElement(array, 0, array.length - 1, key);
+        if (index > -1) {
             System.out.println("Element found at index " + index);
-        }
-        else {
+        } else {
             System.out.println("Element Not Found");
         }
     }
 }
 
 /**
- *  Time Complexity: O(log N)
- *  Auxiliary Space: O(log N)
+ * Time Complexity: O(log N)
+ * Auxiliary Space: O(log N)
+ * <p>
+ * having a return statement in both the else if branches make the code slightly more clear
+ * and prevent further execution of the recursive calls when a match has been found
  */
 
 /**

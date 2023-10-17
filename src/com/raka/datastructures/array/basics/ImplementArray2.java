@@ -6,7 +6,7 @@ public class ImplementArray2 {
         Student[] students = new Student[5];         // initialization of array - decalaration + instantiation
 
         // displaying default values of array
-        for(Student s : students){
+        for (Student s : students) {
             System.out.println(s);          // prints 'null'
         }
         System.out.println();
@@ -28,12 +28,12 @@ public class ImplementArray2 {
 class Student {
     String name;
 
-    public Student(String name){
+    public Student(String name) {
         this.name = name;
     }
 
     @Override
-    public String toString(){       // without this, for each loop displays reference to students in array
+    public String toString() {       // without this, for each loop displays reference to students in array
         return name;
     }
 }

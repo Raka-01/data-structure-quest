@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class ReverseArrayRecursive {
 
-    public static void reverseArray(int[] array, int start, int end){
-        if(start >= end)
+    public static void reverseArray(int[] array, int start, int end) {
+        if (start >= end)
             return;
 
         int temp = array[start];
@@ -16,7 +16,7 @@ public class ReverseArrayRecursive {
         reverseArray(array, start, end);
     }
 
-    public static void displayArray(int[] array){
+    public static void displayArray(int[] array) {
         for (int element : array) {
             System.out.print(element + "   ");
         }
@@ -33,7 +33,7 @@ public class ReverseArrayRecursive {
         array = new int[size];
 
         System.out.println("Enter elements -");
-        for (int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             System.out.println("Index " + i + " -  ");
             array[i] = input.nextInt();
         }
@@ -41,7 +41,7 @@ public class ReverseArrayRecursive {
         System.out.println("Original array");
         displayArray(array);
 
-        reverseArray(array, 0, array.length-1);         // this method will make changes in original array
+        reverseArray(array, 0, array.length - 1);         // this method will make changes in original array
 
         System.out.println();
         System.out.println("Reverse Array - ");

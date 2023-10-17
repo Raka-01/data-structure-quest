@@ -21,7 +21,7 @@ public class ReturnArray {
         int size = random.nextInt(2, 10);
 
         int[] array = new int[size];
-        for(int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             array[i] = random.nextInt(10, 100);
         }
         return array;

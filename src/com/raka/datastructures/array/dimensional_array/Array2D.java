@@ -11,8 +11,8 @@ public class Array2D {
         };
 
         // displaying the objects in 2D
-        for(int i = 0; i < 3; i++){
-            for(int j = 0; j < 3; j++){
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 System.out.print(objects[i][j] + "\t\t");
             }
             System.out.println();

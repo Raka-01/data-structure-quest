@@ -15,13 +15,13 @@ public class TraverseArray2 {
         array = new int[size];
 
         System.out.println("Enter elements -");
-        for (int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             System.out.println("Index " + i + " -  ");
             array[i] = input.nextInt();
         }
 
         System.out.println("Traversing through the array - ");
-        for (int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             System.out.println("Element at index " + i + " -  " + array[i]);
         }
     }

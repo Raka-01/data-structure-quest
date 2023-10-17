@@ -2,28 +2,28 @@ package com.raka.datastructures.array.rotation;
 
 public class RightRotationOneByOne {
 
-    public static void rotateArrayRight(int[] array){
-        int first = array[array.length-1];
-        for(int i = array.length - 1; i > 0; i--){
-            array[i] = array[i-1];
+    public static void rotateArrayRight(int[] array) {           // rotate the array by 1 index
+        int first = array[array.length - 1];
+        for (int i = array.length - 1; i > 0; i--) {          // shifts elements from index (0 to length-2) to (1 to length-1) resp.
+            array[i] = array[i - 1];
         }
-        array[0] = first;
+        array[0] = first;                       // set the last index element at first index
     }
 
-    public static void rotateArrayRight(int[] array, int d){
+    public static void rotateArrayRight(int[] array, int d) {    // rotate the array by 'd' index
         int n = 1;
-        while(n <= d){
-            int first = array[array.length-1];
-            for(int i = array.length - 1; i > 0; i--){
-                array[i] = array[i-1];
+        while (n <= d) {                      // rotate the array to right d times, single element at a time
+            int first = array[array.length - 1];
+            for (int i = array.length - 1; i > 0; i--) {
+                array[i] = array[i - 1];
             }
             array[0] = first;
             n++;
         }
     }
 
-    public static void displayArray(int[] array){
-        for(int element : array){
+    public static void displayArray(int[] array) {       // display the array to console
+        for (int element : array) {
             System.out.print(element + "   ");
         }
         System.out.println();

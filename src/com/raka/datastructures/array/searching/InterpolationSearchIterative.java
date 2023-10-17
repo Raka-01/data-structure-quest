@@ -2,17 +2,17 @@ package com.raka.datastructures.array.searching;
 
 public class InterpolationSearchIterative {
 
-    public static  int searchElement(int[] array, int key){
+    public static int searchElement(int[] array, int key) {
         int lo = 0;
         int hi = array.length - 1;
         int pos;
 
-        while(lo < hi && array[lo] <= key && array[hi] >= key){
+        while (lo < hi && array[lo] <= key && array[hi] >= key) {
 
             // instead of dividing array into half, it makes a data points more close to the key
-            pos = lo + ((hi - lo)/(array[hi] - array[lo]))*(key - array[lo]);       // probe position formula
+            pos = lo + ((hi - lo) / (array[hi] - array[lo])) * (key - array[lo]);       // probe position formula
 
-            if(array[pos] == key){
+            if (array[pos] == key) {
                 return pos;
             } else if (array[pos] < key) {
                 lo = pos + 1;                       // sub-array sets to 2nd part
@@ -28,7 +28,7 @@ public class InterpolationSearchIterative {
         int[] array = {10, 12, 13, 16, 18, 19, 20, 21, 22, 23, 24, 33, 35, 42, 47};
 
         System.out.println("Original Array - ");
-        for (int element : array){
+        for (int element : array) {
             System.out.print(element + "   ");
         }
 
@@ -37,8 +37,7 @@ public class InterpolationSearchIterative {
         int index = searchElement(array, key);
         if (index == -1) {
             System.out.println("Element Not Found");
-        }
-        else{
+        } else {
             System.out.println("\nElement " + key + " Found At Index " + index);
         }
     }

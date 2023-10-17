@@ -14,7 +14,7 @@ public class ImplementArray {
         numbersArray[3] = 812;
         numbersArray[4] = 238;
 
-        for(int i = 0; i < 5; i++){     // accessing each element of array using loop
+        for (int i = 0; i < 5; i++) {     // accessing each element of array using loop
             System.out.println(numbersArray[i]);
         }
     }

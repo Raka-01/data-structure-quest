@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class ReverseArray {
 
-    public static void reverseArray(int[] array){       // reference of array is given as argument, any change will reflect in original array
+    public static void reverseArray(int[] array) {       // reference of array is given as argument, any change will reflect in original array
         int start = 0;
         int end = array.length - 1;
 
-        while(start < end) {
+        while (start < end) {
             int temp = array[start];
             array[start] = array[end];
             array[end] = temp;
@@ -18,7 +18,7 @@ public class ReverseArray {
         }
     }
 
-    public static void displayArray(int[] array){
+    public static void displayArray(int[] array) {
         for (int element : array) {
             System.out.print(element + "   ");
         }
@@ -35,7 +35,7 @@ public class ReverseArray {
         array = new int[size];                  // array is initialized with that size
 
         System.out.println("Enter elements -"); // user is asked to enter elements in the array
-        for (int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             System.out.println("Index " + i + " -  ");
             array[i] = input.nextInt();
         }

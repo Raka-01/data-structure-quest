@@ -2,10 +2,10 @@ package com.raka.datastructures.array.basics;
 
 public class ArrayArgument {
 
-    public static void sum(int[] array){        // method accepting an array as argument
+    public static void sum(int[] array) {        // method accepting an array as argument
         int sum = 0;
 
-        for(int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             sum += array[i];
         }
 
