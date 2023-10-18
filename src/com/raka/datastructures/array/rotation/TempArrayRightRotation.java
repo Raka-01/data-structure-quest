@@ -1,13 +1,12 @@
 package com.raka.datastructures.array.rotation;
 
-public class RightRotationTempArray {
+public class TempArrayRightRotation {
 
     // rotate the original array to the right by d positions
     public static void rotateArrayRight(int[] array, int d) {
         int length = array.length;              // length of original array
-        if (d > length) {                         // if number of positions to rotate exceeds length of array
-            d = d - length;                     // sets the positions to rotate
-        }
+
+        d = d % length;                        // if number of positions to rotate exceeds length of array
 
         // copy the elements from index length-d of original array to start index of temporary array
         int[] temp = new int[length];           // temporary array

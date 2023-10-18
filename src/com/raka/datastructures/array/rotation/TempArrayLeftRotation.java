@@ -1,12 +1,11 @@
 package com.raka.datastructures.array.rotation;
 
-public class LeftRotationTempArray {
+public class TempArrayLeftRotation {
 
     public static void rotateArrayLeft(int[] array, int d) {         // rotate the array left by d positions
         int length = array.length;                  // length of array
-        if (d > length) {                             // if number of rotations exceeded the length
-            d = length - d;                         // sets the number of rotations within length of array
-        }
+
+        d = d % length;                            // if number of rotations exceeded the length
 
         // copy the elements left of index d of original array to index length-d of temporary array
         int[] temp = new int[length];               // initialize a temporary array with array length

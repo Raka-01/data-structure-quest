@@ -1,6 +1,6 @@
 package com.raka.datastructures.array.rotation;
 
-public class LeftRotationOneByOne {
+public class OneByOneLeftRotation {
 
     public static void rotateArrayLeft(int[] array) {            // rotate the array left by index 1
         int last = array[0];
