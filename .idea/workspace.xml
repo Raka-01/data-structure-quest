@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22463011-10fe-4d0f-af64-09243bb74c78" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation/ReverseLeftRotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation/ReverseRightRotation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

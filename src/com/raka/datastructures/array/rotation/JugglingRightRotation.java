@@ -1,7 +1,5 @@
 package com.raka.datastructures.array.rotation;
 
-import static com.raka.datastructures.array.rotation.JugglingLeftRotation.rotateArrayLeft;
-
 public class JugglingRightRotation {
 
     // TODO THIS METHOD IS NOT WORKING FOR ALL VALUES  (eg. it worked for value 15 but not working for value 8
@@ -29,7 +27,7 @@ public class JugglingRightRotation {
 
     public static void rotateArrayRight(int[] array, int d) {
         int length = array.length;
-        rotateArrayLeft(array, length - d);       // instead of rotating right to d position, rotate left by (length-d) position
+        JugglingLeftRotation.rotateArrayLeft(array, length - d);       // instead of rotating right to d position, rotate left by (length-d) position
     }
 
     private static int gcd(int a, int b) {      // calculates gcd of two numbers
