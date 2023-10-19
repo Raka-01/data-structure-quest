@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22463011-10fe-4d0f-af64-09243bb74c78" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation/ReverseLeftRotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation/ReverseRightRotation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation/JugglingLeftRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation_1d/JugglingLeftRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation/JugglingRightRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation_1d/JugglingRightRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation/OneByOneLeftRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation_1d/OneByOneLeftRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation/OneByOneRightRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation_1d/OneByOneRightRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation/ReverseLeftRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation_1d/ReverseLeftRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation/ReverseRightRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation_1d/ReverseRightRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation/TempArrayLeftRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation_1d/TempArrayLeftRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation/TempArrayRightRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation_1d/TempArrayRightRotation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

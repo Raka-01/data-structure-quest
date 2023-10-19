@@ -1,4 +1,4 @@
-package com.raka.datastructures.array.rotation;
+package com.raka.datastructures.array.rotation_1d;
 
 public class TempArrayRightRotation {
 
