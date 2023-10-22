@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ArrayLargestThree2 {
 
     public static void displayLargestThreeElements(int[] array){
-        Arrays.sort(array);             // uses dual-pivot sorting algorithm, time complexity - O(nlogn)
+        Arrays.sort(array);             // uses dual-pivot quicksort algorithm, time complexity - O(nlogn)
 
         int length = array.length;
         int duplicate = 0, count = 1;
