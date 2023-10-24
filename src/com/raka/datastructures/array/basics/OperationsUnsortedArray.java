@@ -14,7 +14,7 @@ public class OperationsUnsortedArray {
         return -1;
     }
 
-    public static boolean insertElement(int[] array, int element){
+    public static int[] insertElement(int[] array, int element){
         int length = array.length;
         int[] temp = new int[length+1];
 
@@ -22,12 +22,12 @@ public class OperationsUnsortedArray {
             temp[i] = array[i];
         }
         temp[temp.length-1] = element;
-        array = temp;
 
-        return true;
+        System.out.println("Element inserted successfully");
+        return temp;
     }
 
-    public static boolean insertElement(int[] array, int element, int index){
+    public static int[] insertElement(int[] array, int element, int index){
         int length = array.length;
         int[] temp = new int[length+1];
 
@@ -36,64 +36,52 @@ public class OperationsUnsortedArray {
         }
 
         for(int i = index+1; i < temp.length; i++){
-            temp[i] = array[i];
+            temp[i] = array[i-1];
         }
         temp[index] = element;
-        array = temp;
+        System.out.println("Element inserted successfully at specified index");
 
-        return true;
+        return temp;
     }
 
-    public static boolean deleteElement(int[] array, int element){
+    public static int[] deleteElement(int[] array, int element){
         int length = array.length;
-        if(length > 0){
 
-            for(int i = 0; i < length; i++){
-                if(array[i] == element){
-                    length--;
-                    for(int j = i; j < length; j++){
-                        array[j] = array[j+1];
-                    }
-                    break;
+        for(int i = 0; i < length; i++){
+            if(array[i] == element){
+                length--;
+                for(int j = i; j < length; j++){
+                    array[j] = array[j+1];
                 }
+                break;
             }
-            int[] temp = new int[length];
-            for(int i = 0; i < length; i++){
-                temp[i] = array[i];
-            }
-            array = temp;
-
-            return true;
         }
-        else {
-            System.out.println("Array is empty");
-            return false;
+        int[] temp = new int[length];
+        for(int i = 0; i < length; i++){
+            temp[i] = array[i];
         }
+        System.out.println("Element deleted successfully");
+        return temp;
     }
 
-    public static boolean deleteAllOccurrences(int[] array, int element){
+    public static int[] deleteAllOccurrences(int[] array, int element){
         int length = array.length;
-        if(length > 0){
-            for(int i = 0; i < length; i++){
-                if(array[i] == element){
-                    length--;
-                    for(int j = i; j < length; j++){
-                        array[j] = array[j+1];
-                    }
+
+        for(int i = 0; i < length; i++){
+            if(array[i] == element){
+                length--;
+                for(int j = i; j < length; j++){
+                    array[j] = array[j+1];
                 }
             }
-            int[] temp = new int[length];
-            for(int i = 0; i < length; i++){
-                temp[i] = array[i];
-            }
-            array = temp;
+        }
+        int[] temp = new int[length];
+        for(int i = 0; i < length; i++){
+            temp[i] = array[i];
+        }
+        System.out.println("All occurrences of element deleted successfully");
+        return temp;
 
-            return true;
-        }
-        else {
-            System.out.println("Array is empty");
-            return false;
-        }
     }
 
     public static boolean anotherOperation(){
@@ -190,9 +178,7 @@ public class OperationsUnsortedArray {
                         }
                     }
                     validInput = false;
-                    if(insertElement(array, element)){
-                        System.out.println("Element inserted successfully");
-                    }
+                    array = insertElement(array, element);
                     flag = anotherOperation();
                     break;
                 case 3 :
@@ -208,58 +194,64 @@ public class OperationsUnsortedArray {
                     }
                     validInput = false;
                     index = -1;
-                    while (index > array.length){
-                        if(index > array.length){
+                    boolean firstIteration = true;
+                    while (index > array.length || index < 0 || validInput == false){
+                        if((index > array.length || index < 0) && !firstIteration){
                             System.out.println("Index out of range of array");
                         }
-                        while (validInput == false){
-                            try {
+                        try {
+                            Scanner input = new Scanner(System.in);
+                            System.out.println("Enter the specified index - ");
+                            index = input.nextInt();
+                            validInput = true;
+                            firstIteration = false;
+                        } catch(InputMismatchException e){
+                            System.out.println("Invalid Input");
+                            firstIteration = true;
+                            validInput = false;
+                        }
+                    }
+                    validInput = false;
+                    array = insertElement(array, element, index);
+                    flag = anotherOperation();
+                    break;
+                case 4 :
+                    if(array.length > 0){
+                        while(validInput == false){
+                            try{
                                 Scanner input = new Scanner(System.in);
-                                System.out.println("Enter the specified index - ");
-                                index = input.nextInt();
+                                System.out.println("Enter an integer to delete -");
+                                element = input.nextInt();
                                 validInput = true;
                             } catch(InputMismatchException e){
                                 System.out.println("Invalid Input");
                             }
                         }
+                        validInput = false;
+                        array = deleteElement(array, element);
                     }
-                    validInput = false;
-                    if(insertElement(array, element, index)){
-                        System.out.println("Element inserted successfully at specified index");
-                    }
-                    flag = anotherOperation();
-                    break;
-                case 4 :
-                    while(validInput == false){
-                        try{
-                            Scanner input = new Scanner(System.in);
-                            System.out.println("Enter an integer to delete -");
-                            element = input.nextInt();
-                            validInput = true;
-                        } catch(InputMismatchException e){
-                            System.out.println("Invalid Input");
-                        }
-                    }
-                    validInput = false;
-                    if(deleteElement(array, element)){
-                        System.out.println("Element deleted successfully");
+                    else {
+                        System.out.println("Array is empty");
                     }
                     flag = anotherOperation();
                     break;
                 case 5 :
-                    while(validInput == false){
-                        try {
-                            Scanner input = new Scanner(System.in);
-                            System.out.println("Enter an integer to delete -");
-                            element = input.nextInt();
-                            validInput = true;
-                        } catch (InputMismatchException e){
-                            System.out.println("Invalid Input");
+                    if(array.length > 0){
+                        while(validInput == false){
+                            try {
+                                Scanner input = new Scanner(System.in);
+                                System.out.println("Enter an integer to delete -");
+                                element = input.nextInt();
+                                validInput = true;
+                            } catch (InputMismatchException e){
+                                System.out.println("Invalid Input");
+                            }
                         }
+                        validInput = false;
+                        array = deleteAllOccurrences(array, element);
                     }
-                    validInput = false;
-                    if(deleteAllOccurrences(array, element)){
-                        System.out.println("All occurrences of element deleted successfully");
+                    else {
+                        System.out.println("Array is empty");
                     }
                     flag = anotherOperation();
                     break;
