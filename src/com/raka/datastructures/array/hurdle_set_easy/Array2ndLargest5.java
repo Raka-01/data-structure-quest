@@ -4,6 +4,11 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * Time Complexity - O(n)
+ * Auxiliary Space - O(n)
+ */
+
 public class Array2ndLargest5 {
 
     public static void display2ndLargestElement(int[] array){
