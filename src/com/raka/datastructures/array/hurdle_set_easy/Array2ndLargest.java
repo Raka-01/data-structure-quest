@@ -2,6 +2,11 @@ package com.raka.datastructures.array.hurdle_set_easy;
 
 import java.util.Arrays;
 
+/**
+ * Time Complexity - O(nlogn)       Time required to sort the array is O(nlogn)
+ * Auxiliary Space - O(1)           No extra space needed
+ */
+
 public class Array2ndLargest {
 
     public static void display2ndLargestElement(int[] array){

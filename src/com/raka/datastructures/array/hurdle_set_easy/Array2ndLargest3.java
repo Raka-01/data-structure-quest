@@ -5,6 +5,11 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
+/**
+ * Time Complexity - O(nlogn)       Time required to insert into set and traverse it
+ * Auxiliary Space - O(n)           space required by set
+ */
+
 public class Array2ndLargest3 {
 
     public static void display2ndLargestElement(int[] array){

@@ -1,5 +1,9 @@
 package com.raka.datastructures.array.hurdle_set_easy;
 
+/**
+ * Time Complexity - O(n)       Two traversals of array needed
+ * Auxiliary Space - O(1)       No extra space needed
+ */
 public class Array2ndLargest2 {
 
     public static void display2ndLargestElement(int[] array){
