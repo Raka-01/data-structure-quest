@@ -1,9 +1,12 @@
 package com.raka.datastructures.array.sorting;
 
+/**
+ * Time complexity - O(n^2)
+ */
 public class BubbleSort {
 
     // sort the array using bubble sort
-    public static void bubbleSort(int[] array){
+    public static void bubbleSort(int[] array) {
         int length = array.length;
         /*
         temporary variable used to swap elements in array,
@@ -13,22 +16,22 @@ public class BubbleSort {
         int temp;
 
         // in the outside loop, iterating through each element of the array
-        for(int i = 0; i < length-1; i++){
+        for (int i = 0; i < length - 1; i++) {
             // in inside loop, checking if adjacent elements are in correct order
-            for (int j = 0; j < length-1-i; j++){       // length-1-i, because in each iteration, 1 element is sorted
+            for (int j = 0; j < length - 1 - i; j++) {       // length-1-i, because in each iteration, 1 element is sorted
                 // swaps the elements if they are in wrong order
-                if(array[j] > array[j+1]){
+                if (array[j] > array[j + 1]) {
                     temp = array[j];
-                    array[j] = array[j+1];
-                    array[j+1] = temp;
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
                 }
             }
         }
     }
 
     // display the array to console
-    public static void displayArray(int[] array){
-        for(int element : array){
+    public static void displayArray(int[] array) {
+        for (int element : array) {
             System.out.print(element + "   ");
         }
         System.out.println();
