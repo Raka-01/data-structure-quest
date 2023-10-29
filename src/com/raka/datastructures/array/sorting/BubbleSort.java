@@ -1,7 +1,7 @@
 package com.raka.datastructures.array.sorting;
 
 /**
- * Time complexity - O(n^2)
+ * Time complexity - O(n^2) - worst/average case,  O(n) - best case
  */
 public class BubbleSort {
 
