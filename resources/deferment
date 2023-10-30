@@ -7,5 +7,6 @@ Topics(mostly algorithms) that I will study later after completing the overall d
     3. Sorting algorithms  ( https://www.geeksforgeeks.org/sorting-algorithms/ )
         - simple one of each of common sorting algos are done
         - recursive and modified ones are left
+        - start from heap sort forward (0 implementation)
     4. Inversion Count Problem ( https://www.geeksforgeeks.org/inversion-count-in-array-using-merge-sort/ )
     5. Divide & Conquer algorithm
