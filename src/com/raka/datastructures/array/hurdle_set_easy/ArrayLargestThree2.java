@@ -2,6 +2,10 @@ package com.raka.datastructures.array.hurdle_set_easy;
 
 import java.util.Arrays;
 
+/**
+ * Find the largest three distinct elements in an array
+ */
+
 public class ArrayLargestThree2 {
 
     public static void displayLargestThreeElements(int[] array){

@@ -1,6 +1,8 @@
 package com.raka.datastructures.array.hurdle_set_easy;
 
 /**
+ * Find second-largest element in an array
+ *
  * Time Complexity - O(n)       Only one traversal of array needed
  * Auxiliary Space - O(1)       No extra space required
  */

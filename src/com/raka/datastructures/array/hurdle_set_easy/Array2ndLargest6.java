@@ -4,6 +4,8 @@ import java.util.Collections;
 import java.util.PriorityQueue;
 
 /**
+ * Find second-largest element in an array
+ *
  * Time Complexity - O(nlogn)
  * Auxiliary Space - O(n)       priority queue
  */

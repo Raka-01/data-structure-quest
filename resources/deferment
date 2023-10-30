@@ -10,3 +10,4 @@ Topics(mostly algorithms) that I will study later after completing the overall d
         - start from heap sort forward (0 implementation)
     4. Inversion Count Problem ( https://www.geeksforgeeks.org/inversion-count-in-array-using-merge-sort/ )
     5. Divide & Conquer algorithm
+    6. Generate power set & generate subsequences ( https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/ )

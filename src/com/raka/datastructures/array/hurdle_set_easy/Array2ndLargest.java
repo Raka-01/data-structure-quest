@@ -3,6 +3,8 @@ package com.raka.datastructures.array.hurdle_set_easy;
 import java.util.Arrays;
 
 /**
+ * Find second-largest element in an array
+ *
  * Time Complexity - O(nlogn)       Time required to sort the array is O(nlogn)
  * Auxiliary Space - O(1)           No extra space needed
  */

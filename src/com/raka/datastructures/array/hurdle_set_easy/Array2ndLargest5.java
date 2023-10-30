@@ -5,6 +5,8 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
+ * Find second-largest element in an array
+ *
  * Time Complexity - O(n)
  * Auxiliary Space - O(n)
  */

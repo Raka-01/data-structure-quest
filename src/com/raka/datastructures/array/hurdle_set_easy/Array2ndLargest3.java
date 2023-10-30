@@ -6,6 +6,8 @@ import java.util.Set;
 import java.util.TreeSet;
 
 /**
+ * Find second-largest element in an array
+ *
  * Time Complexity - O(nlogn)       Time required to insert into set and traverse it
  * Auxiliary Space - O(n)           space required by set
  */

@@ -1,6 +1,8 @@
 package com.raka.datastructures.array.hurdle_set_easy;
 
 /**
+ * Find the largest three distinct elements in an array
+ *
  * Time complexity - O(n)
  */
 public class ArrayLargestThree {

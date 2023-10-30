@@ -1,5 +1,9 @@
 package com.raka.datastructures.array.basics;
 
+/**
+ * Time complexity - O(2^n)
+ * Auxiliary space - O(2^n)
+ */
 public class SubArrayRecursive {
 
     // display the sub-arrays of array using recursive approach
