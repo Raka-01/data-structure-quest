@@ -4,6 +4,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Move all zeroes to end of array without affecting the order of non-zero elements
+ *
+ * Approach - traverse the whole array and will count the number of zeros present in the array.
+ * While counting, delete the zero from the array.
+ * After completing the above process, push back the count number of zeros into the array
+ *
+ * Time complexity - O(n)
+ * Auxiliary space - O(1)
+ */
+
 public class PushZerosToEnd3 {
 
     public static void pushZerosToEnd(List<Integer> array) {
