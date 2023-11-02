@@ -16,7 +16,7 @@ package com.raka.datastructures.array.hurdle_set_easy;
  * Auxiliary Space: O(1)
  */
 
-public class SegregateArrayOddEven {
+public class SegregateArrayEvenOdd2 {
 
     // rearrange array to put even elements at left and odd elements at right
     public static void segregateEvenOdd(int[] array) {
