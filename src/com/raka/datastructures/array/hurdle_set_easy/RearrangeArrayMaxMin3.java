@@ -2,7 +2,7 @@ package com.raka.datastructures.array.hurdle_set_easy;
 
 import java.util.Arrays;
 
-/**
+/**   (I DON'T KNOW HOW TO REACH TO THIS MATHEMATICAL EXPRESSION)
  * Rearrange an array in maximum minimum form
  * (rearrange the array alternately so that first element should be a maximum value,
  * at second position minimum value, at third position second max,
