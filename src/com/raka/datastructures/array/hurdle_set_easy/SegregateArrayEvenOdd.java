@@ -7,7 +7,7 @@ package com.raka.datastructures.array.hurdle_set_easy;
  * In the output, the order of numbers can be changed
  * <p>
  * Approach -
- * Lomuto partition
+ * Lomuto partition scheme  (visit resource page)
  * <p>
  * Time complexity - O(n)
  * Auxiliary space - O(1)

@@ -1,0 +1,33 @@
+LOMUTO'S PARTITION SCHEME
+
+This algorithm works by assuming the pivot element as the last element.
+If any other element is given as a pivot element then swap it first with the last element.
+Now initialize two variables i as low and j also low,
+iterate over the array and increment i when arr[j] <= pivot and
+swap arr[i] with arr[j] otherwise increment only j.
+After coming out from the loop swap arr[i] with arr[hi].
+This i stores the pivot element.
+
+partition(arr[], lo, hi)
+    pivot = arr[hi]
+    i = lo-1     // place for swapping
+    for j := lo to hi – 1 do
+        if arr[j] <= pivot then
+            i = i + 1
+            swap arr[i] with arr[j]
+    swap arr[i+1] with arr[hi]
+    return i+1
+
+APPROACH FOR SEGREGATING EVEN & ODD ELEMENTS IN AN ARRAY
+
+ - Start with an array of numbers
+ - Choose a pivot element from the array
+ - Initialize two pointers, i and j.
+        - The pointer i will keep track of the boundary between the even and odd numbers, and
+        - the pointer j will iterate through the array.
+ - Iterate through the array using the pointer j.
+        - Compare each element with the pivot and perform the following steps:
+        - If the element is even, swap it with the element at index i and increment i.
+        - If the element is odd, do nothing and continue.
+ - After iterating through the array, we partitioned the even and odd numbers
+ - Finally, swap the pivot element with the element at index I
