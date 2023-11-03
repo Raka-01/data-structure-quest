@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="22463011-10fe-4d0f-af64-09243bb74c78" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/raka/datastructures/array/hurdle_set_easy/SegregateArrayEvenOdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/hurdle_set_easy/SegregateArrayEvenOdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation_1d/ReverseLeftRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation_1d/ReverseLeftRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation_1d/ReverseRightRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/raka/datastructures/array/rotation_1d/ReverseRightRotation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

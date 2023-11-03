@@ -10,14 +10,18 @@ public class ReverseRightRotation {
     public static void rotateArrayLeft(int[] array, int d) {
         int length = array.length;
 
-        // reversed first d elements of the array
-        reverseArray(array, 0, d - 1);
+        if (length > 1){
+            d = d % length;
+            // reversed first d elements of the array
+            reverseArray(array, 0, d - 1);
 
-        // reversed last (length-d) elements of the array
-        reverseArray(array, d, length - 1);
+            // reversed last (length-d) elements of the array
+            reverseArray(array, d, length - 1);
 
-        // finally reversed the whole array
-        reverseArray(array, 0, length - 1);
+            // finally reversed the whole array
+            reverseArray(array, 0, length - 1);
+        }
+
     }
 
     private static void reverseArray(int[] array, int start, int end) {     // reverse an array from start to end index

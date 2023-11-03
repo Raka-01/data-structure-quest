@@ -5,14 +5,19 @@ public class ReverseLeftRotation {
     public static void rotateArrayLeft(int[] array, int d) {
         int length = array.length;
 
-        // reversed first d elements of the array
-        reverseArray(array, 0, d - 1);
+        if (length > 1) {
+            d = d % length;
 
-        // reversed last (length-d) elements of the array
-        reverseArray(array, d, length - 1);
+            // reversed first d elements of the array
+            reverseArray(array, 0, d - 1);
 
-        // finally reversed the whole array
-        reverseArray(array, 0, length - 1);
+            // reversed last (length-d) elements of the array
+            reverseArray(array, d, length - 1);
+
+            // finally reversed the whole array
+            reverseArray(array, 0, length - 1);
+        }
+
     }
 
     private static void reverseArray(int[] array, int start, int end) {     // reverse an array from start to end index
@@ -42,7 +47,7 @@ public class ReverseLeftRotation {
         int d = 7;
         rotateArrayLeft(array, d);
 
-        System.out.println("Array rotated by " + d + "positions");
+        System.out.println("Array rotated by " + d + " positions");
         displayArray(array);
     }
 }
