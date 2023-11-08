@@ -2,6 +2,32 @@ package com.raka.datastructures.array.hurdle_set_easy;
 
 import java.util.Arrays;
 
+/**
+ * Count the number of possible triangles
+ * Given an unsorted array of positive integers,
+ * find the number of triangles that can be formed with three different array elements as three sides of triangles.
+ * For a triangle to be possible from 3 values, the sum of the two values (or sides)
+ * must be greater than the third value (or third side).
+ *<p>
+ * Approach -
+ *  - sort the array in asc order
+ *  - run a nested loop, outer loop runs from start to end
+ *      and inner one runs from index+1 of outer loop to end
+ *      counter for outer loop - i
+ *      counter for inner loop - j
+ *  - take another variable k = i+2
+ *  - two pointers i and j, where array[i] and array[j] represent two sides of the triangles
+ *  - For a fixed i and j, find the count of third sides which will satisfy the conditions of a triangle
+ *      i.e find the largest value of array[k] such that array[i] + array[j] > array[k]
+ *  - when we get the largest value, then the count of the third side is k – j, add it to the total count
+ *<p>
+ *  Time complexity - O(n^2)
+ *      - it looks more because of 3 nested loops, but k is initialized only once in outermost loop
+ *      - innermost loop executes at most O(n) time for every iteration of the outermost loop,
+ *          because k starts from i+2 and goes up to n for all values of j
+ *  Auxiliary space - O(1)
+ *      - No extra space needed, so space complexity is constant
+ */
 public class ArrayPossibleTriangles2 {
 
     // count the possible number of triangles taking array elements as sides
