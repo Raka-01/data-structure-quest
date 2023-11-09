@@ -13,7 +13,7 @@ package com.raka.datastructures.array.hurdle_set_easy;
  * Auxiliary space - O(1)
  */
 
-public class DistinctArrayElements {
+public class ArrayDistinctElements {
 
     // display all the distinct elements present in the array
     public static void displayDistinctElements(int[] array) {
