@@ -3,22 +3,34 @@ package com.raka.datastructures.array.hurdle_set_easy;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Find the element that appears once in an array where other elements appear twice
+ * <p>
+ * Approach - using Hashmap to count frequencies
+ * - create a hashmap and store all the unique elements with their frequency in the array
+ * - iterate through each entry set of the map
+ * - return that first key whose frequency(value) is 1
+ * <p>
+ * Time complexity - O(n)
+ * Auxiliary space - O(n)
+ */
+
 public class ArraySingleOccurrenceElement6 {
 
     // returns the element that has occurred only once in the array
-    public static int singleOccurrenceElement(int[] array){
+    public static int singleOccurrenceElement(int[] array) {
         Map<Integer, Integer> map = new HashMap<>();
 
         // iterating through each element in the array
-        for (int element : array){
+        for (int element : array) {
             int frequency = map.getOrDefault(element, 0);   // get the frequency of each element from map or else sets 0
-            map.put(element, frequency+1);      // puts an element with its frequency in the array till current iteration
+            map.put(element, frequency + 1);      // puts an element with its frequency in the array till current iteration
         }
 
         // iterating through each entry set of the map
-        for (Map.Entry<Integer, Integer> element : map.entrySet()){
+        for (Map.Entry<Integer, Integer> element : map.entrySet()) {
             // the first element in the map has frequency or value 1, that value is returned
-            if (element.getValue() == 1){
+            if (element.getValue() == 1) {
                 return element.getKey();
             }
         }
@@ -27,14 +39,13 @@ public class ArraySingleOccurrenceElement6 {
     }
 
     public static void main(String[] args) {
-        int[] array ={5, 2, 9, 1, 8, 4, 3, 8, 7, 2, 9, 4, 5, 1, 7};
+        int[] array = {5, 2, 9, 1, 8, 4, 3, 8, 7, 2, 9, 4, 5, 1, 7};
 
         int singleElement = singleOccurrenceElement(array);
 
-        if (singleElement != -1){
+        if (singleElement != -1) {
             System.out.println("Element that has occurred only once in the array = " + singleElement);
-        }
-        else {
+        } else {
             System.out.println("No element is present in the array that has occurred only once in the array");
         }
     }
