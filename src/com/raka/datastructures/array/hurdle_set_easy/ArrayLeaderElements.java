@@ -9,7 +9,7 @@ package com.raka.datastructures.array.hurdle_set_easy;
  * - inner loop compares the picked element to all the elements on its right side
  * - if picked element is greater than all the elements to its right side
  * - it is a leader
- *
+ * <p>
  * Time complexity - O(n^2)
  * Auxiliary space - O(1)
  */
