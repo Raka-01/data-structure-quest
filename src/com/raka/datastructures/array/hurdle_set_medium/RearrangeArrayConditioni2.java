@@ -1,12 +1,34 @@
 package com.raka.datastructures.array.hurdle_set_medium;
 
+/**
+ * Rearrange an array such that arr[i] = i
+ * Given an array of elements of length N, ranging from 0 to N – 1.
+ * All elements may not be present in the array.
+ * If the element is not present then there will be -1 present in the array.
+ * Rearrange the array such that A[i] = i and if i is not present, display -1 at that place.
+ * <p>
+ * Approach -
+ * - iterate through each element of the array
+ * - check if arr[i] == -1, if true, ignore it
+ * - if arr[i] != -1, then check if arr[i] == i (element i at index i), if true, ignore it
+ * - if arr[i] != -1 and arr[i] != i, then there is different element k at index i,
+ * so place the element k at its correct index k
+ *      - if arr[i] is vacate, means arr[i] = -1, then put arr[i] = i
+ *      - if arr[i] is not vacate, means arr[i] = k, then temp = k, then arr[i] = i,
+ * and now we have to place temp at its correct position index k
+ * - this process is repeated till each element is correctly placed
+ * <p>
+ * Time complexity - O(n)
+ * Auxiliary space - O(1)
+ */
+
 public class RearrangeArrayConditioni2 {
 
-    public static void rearrangeElementsi(int[] array){
+    public static void rearrangeElementsi(int[] array) {
         int length = array.length;
 
         // iterate through each element of the array
-        for (int i = 0; i < length; i++){
+        for (int i = 0; i < length; i++) {
             /*
             ignores index i if -1 or element i is present at index i
 
@@ -18,11 +40,11 @@ public class RearrangeArrayConditioni2 {
              putting the element l to its correct position and so on
              (not vacate means a different index element is present at that index)
              */
-            if (array[i] != -1 && array[i] != i){
+            if (array[i] != -1 && array[i] != i) {
                 int k = array[i];           // vacate the desired index i for element i
 
                 // putting element k that was at i to its correct position index k
-                while (array[k] != -1 && array[k] != k){
+                while (array[k] != -1 && array[k] != k) {
                     int l = array[k];       // vacate the desired index k for element k
                     array[k] = k;           // putting element k at position k
                     k = l;                  // if index l is not vacate to put element l, repeat the loop
@@ -35,7 +57,7 @@ public class RearrangeArrayConditioni2 {
                  it means element i is not present in array or
                  element i at different index x which will come in further iteration
                  */
-                if (array[i] != i){
+                if (array[i] != i) {
                     array[i] = -1;
                 }
             }
