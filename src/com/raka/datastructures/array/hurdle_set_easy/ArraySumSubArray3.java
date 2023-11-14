@@ -49,7 +49,8 @@ public class ArraySumSubArray3 {
 
     public static void main(String[] args) {
         int[] array = {3, 7, 2, 4, 5, 7, 2, 1, 4, 3, 1, 9, 9, 6, 8, 4, 2, 3};
-        int sum = 33;
+//        int[] array = {10, 2, -2, -20, 10};           // can handle negatives also
+        int sum = 27;
 
         displaySubarrayWithSum(array, sum);
     }

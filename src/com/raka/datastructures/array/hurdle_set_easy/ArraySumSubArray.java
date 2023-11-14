@@ -48,6 +48,9 @@ public class ArraySumSubArray {
         int[] array = {7, 2, 8, 4, 9, 7, 3, 4, 3, 1, 8, 9, 7, 6, 8};
         int sum = 18;
 
+//        int[] array = {10, 2, -2, -20, 10};           // can handle negatives also
+//        int sum = -10;
+
         displaySubarrayWithSum(array, sum);
     }
 }
