@@ -3,6 +3,7 @@ package com.raka.ds.striver.basics.java;
 import java.util.Scanner;
 
 /**
+ * Striver 1.1
  * Write a program that takes a character as input and prints 1, 0 and -1 based on the condition
  *  - 1, if character is an uppercase alphabet (A - Z)
  *  - 0, if character is a lowercase letter (a - z)
