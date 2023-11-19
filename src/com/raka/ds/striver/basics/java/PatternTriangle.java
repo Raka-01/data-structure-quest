@@ -5,19 +5,19 @@ import java.util.Scanner;
 /**
  * Striver 1.2
  * Print the following pattern :
- *      *  *  *  *  *
- *      *  *  *  *  *
- *      *  *  *  *  *
- *      *  *  *  *  *
+ *      *
+ *      *  *
+ *      *  *  *
+ *      *  *  *  *
  *      *  *  *  *  *
  */
 
-public class PatternSquare {
+public class PatternTriangle {
 
-    public static void patternSquare(int n){
-        System.out.println("Pattern -");
-        for (int  i = 0; i < n; i++){
-            for (int j = 0; j < n; j++){
+    public static void patternTriangle(int n){
+        System.out.println("Pattern - ");
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j <= i; j++){
                 System.out.print("*  ");
             }
             System.out.println();
@@ -30,6 +30,6 @@ public class PatternSquare {
         System.out.println("Enter the value of n - ");
         int n = sc.nextInt();
 
-        patternSquare(n);
+        patternTriangle(n);
     }
 }
