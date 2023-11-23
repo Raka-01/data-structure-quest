@@ -3,6 +3,7 @@ package com.raka.ds.striver.basics.java;
 import java.util.Scanner;
 
 /**
+ * Striver 1.4
  * There is a number 'N'
  * Find the number of digits of 'N' that evenly divides 'N'
  * A digit evenly divides 'N' if it leaves no remainder when dividing it.
