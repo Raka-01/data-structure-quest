@@ -5,6 +5,9 @@ import java.util.Scanner;
 /**
  * Striver 1.4
  * Calculate the GCD of two given numbers
+ * <p>
+ * Time complexity - O(n)
+ * where n is smallest of 2 numbers
  */
 public class GCDofNumber {
 
