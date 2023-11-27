@@ -7,12 +7,12 @@ import java.util.Scanner;
  * Given a number, print all the divisors of the number.
  * A divisor is a number that gives the remainder as zero when divided.
  * <p>
- * Approach -
+ * Approach - factors of number exists in pair, one before and one after the sqrt(number)
  * - traverse till root of the given number
  * - if iterating variable is a divisor, then quotient on dividing the number with i is also a divisor
  * - ignore quotient if it is equal to i (perfect square case)
  * <p>
- * Time complexity - O(n)
+ * Time complexity - O(sqrt(n))
  * Auxiliary space - O(1)
  */
 
