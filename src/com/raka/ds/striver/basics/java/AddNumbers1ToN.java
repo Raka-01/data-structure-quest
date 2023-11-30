@@ -3,6 +3,7 @@ package com.raka.ds.striver.basics.java;
 import java.util.Scanner;
 
 /**
+ * Striver 1.5
  * Given the value of integer n, return an array containing integers 1 to n in ascending order
  * <p>
  * Time complexity - O(n)
