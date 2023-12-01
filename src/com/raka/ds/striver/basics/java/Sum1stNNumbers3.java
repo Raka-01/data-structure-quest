@@ -16,7 +16,6 @@ public class Sum1stNNumbers3 {
             return 0;
         }
 
-
         return n + sumNNumbers(n - 1);
     }
 
