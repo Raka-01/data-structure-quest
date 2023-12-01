@@ -9,15 +9,14 @@ import java.util.Scanner;
  * Time complexity - O(n)
  */
 
-public class FactorialOfNumber {
+public class FactorialOfNumber2 {
 
-    public static int factorial(int num) {
-        int fact = 1;
-        for (int i = 2; i <= num; i++) {
-            fact = fact * i;
+    public static int factorial(int num){
+        if (num == 1){
+            return 1;
         }
 
-        return fact;
+        return num * factorial(num-1);
     }
 
     public static void main(String[] args) {
