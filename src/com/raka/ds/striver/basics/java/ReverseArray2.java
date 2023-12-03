@@ -8,17 +8,20 @@ package com.raka.ds.striver.basics.java;
  * Auxiliary space - O(1)
  */
 
-public class ReverseArray {
+public class ReverseArray2 {
 
-    public static int[] reverseArray(int[] array) {
+    public static void reverseArray(int[] array) {
         int length = array.length;
-        int[] reverseArray = new int[length];
+        int i = 0;
+        int j = length - 1;
 
-        for (int i = 0; i < length; i++) {
-            reverseArray[i] = array[length - 1 - i];
+        while (i < j) {
+            int temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+            i++;
+            j--;
         }
-
-        return reverseArray;
     }
 
     public static void displayArray(int[] array) {
@@ -29,14 +32,14 @@ public class ReverseArray {
     }
 
     public static void main(String[] args) {
-        int[] array = {2, 7, 4, 9, 2, 6, 4};
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
         System.out.println("Original Array - ");
         displayArray(array);
 
-        int[] reverseArray = reverseArray(array);
+        reverseArray(array);
 
         System.out.println("Reversed Array - ");
-        displayArray(reverseArray);
+        displayArray(array);
     }
 }
