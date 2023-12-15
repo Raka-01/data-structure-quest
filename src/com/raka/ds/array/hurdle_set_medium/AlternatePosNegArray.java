@@ -13,6 +13,9 @@ package com.raka.ds.array.hurdle_set_medium;
  * - start from the first negative number and first positive number
  * - swap every alternate negative number with the next positive number
  * <p>
+ * The partition process in this approach changes the relative order of elements.
+ * i.e. the order of the appearance of elements is not maintained with this approach
+ * <p>
  * Time complexity - O(n)
  * Auxiliary space - O(1)
  */
