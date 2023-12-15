@@ -7,12 +7,14 @@ package com.raka.ds.array.hurdle_set_medium;
  * If there are more positive numbers they appear at the end of the array.
  * If there are more negative numbers, they too appear at the end of the array.
  * <p>
- * Approach - Using temporary arrays
- * - count either of positive or negative elements in array
- * - create 2 temp array, one to hold positive elements, and other to hold negative elements
- * - copy positive and negative elements to respective temp array
- * - iterate through original array
- * - copy the positive and negative elements from temp arrays back to original array alternatively
+ * Approach - Using outOfPlace variable and rotation
+ * - Maintain a variable, outOfPlace initialized at -1, to mark if the element is in its correct position or not
+ * - iterate over the array
+ * - if outOfPlace is -1, we will check if the current index is out of place
+ * - if the current index is out of place we will update the outOfPlace with the index value
+ * - if the outOfPlace is not -1, search for next element with different sign than element at outOfPlace index
+ * - pass this two positions to right rotate our array
+ * - update the outOfPlace by 2 unit (as previously valid elements will now become the out-of-place elements)
  * <p>
  * This approach maintains the relative order of the elements in the array while rearranging
  * <p>
