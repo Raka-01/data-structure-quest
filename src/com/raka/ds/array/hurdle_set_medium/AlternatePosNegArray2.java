@@ -17,7 +17,7 @@ package com.raka.ds.array.hurdle_set_medium;
  * This approach maintains the relative order of the elements in the array while rearranging
  * <p>
  * Time complexity - O(n)
- * Auxiliary space - O(1)
+ * Auxiliary space - O(n)
  */
 
 public class AlternatePosNegArray2 {

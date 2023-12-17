@@ -18,7 +18,8 @@ package com.raka.ds.array.hurdle_set_medium;
  * <p>
  * This approach maintains the relative order of the elements in the array while rearranging
  * <p>
- * Time complexity - O(n)
+ * Time complexity - O(n^2), using loop to traverse n times & calling function to right rotate each time costs O(n)
+ * or we can say O(n+k), n - iterate through the array, k - rotating a significant number of elements in worst case
  * Auxiliary space - O(1)
  */
 
