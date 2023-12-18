@@ -14,7 +14,7 @@ import java.util.Comparator;
  * - sort the array of pairs based on indices(2nd element) using comparator
  * - copy the rearranged elements back to arr[]
  * <p>
- * Time complexity - O(nlog), due to Arrays.sort() method
+ * Time complexity - O(nlogn), due to Arrays.sort() method
  * Auxiliary space - O(n), pairs[] array used to store pairs of elements and indices
  */
 
