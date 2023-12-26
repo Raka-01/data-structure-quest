@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * Search an element in a sorted and rotated Array
  * Given a sorted and rotated array arr[] of size N and a key, the task is to find the key in the array.
+ * All the elements in the array are unique and different
  * <p>
  * Approach - By finding pivot element where array is rotated
  * - in a sorted and rotated array, the pivot element is the only element for which the next element to it is smaller than it
@@ -101,6 +102,12 @@ public class SearchElementSortedRotatedArray {
 
         int key = 1;
         int index = searchElement(array, key);
-        System.out.println("The key " + key + " is found on index " + index + " of the array");
+
+        if (index != -1){
+            System.out.println("The key " + key + " is found on index " + index + " of the array");
+        }
+        else {
+            System.out.println("Element Not Found");
+        }
     }
 }

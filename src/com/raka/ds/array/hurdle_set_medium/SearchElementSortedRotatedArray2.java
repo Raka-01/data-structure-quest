@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * Search an element in a sorted and rotated Array
  * Given a sorted and rotated array arr[] of size N and a key, the task is to find the key in the array.
+ * All the elements in the array are unique and different
  * <p>
  * Approach - using direct binary search
  *  - use a while loop(low <= high) to search the key
@@ -40,12 +41,13 @@ public class SearchElementSortedRotatedArray2 {
                 checks if key lies in first half(sorted) or the other half(unsorted)
                  */
                 if (key >= array[low] && key < array[mid]) {
+                    // if key lies in first half, reduce the search space to 1st half
                     high = mid - 1;
                 }
                 else {
                     /*
                     if key is not present in first sorted half, then
-                    search for the key in the second half
+                    reduce the search space to 2nd half
                      */
                     low = mid + 1;
                 }
@@ -56,14 +58,16 @@ public class SearchElementSortedRotatedArray2 {
                 second half arr[mid ... high] must be sorted
                  */
                 if (key > array[mid] && key <= array[high]){
+                    // if key is present in 2nd half, reduce the search space to 2nd half
                     low = mid + 1;
                 }
                 else {
+                    // else reduce the search space to 1st half
                     high = mid - 1;
                 }
             }
         }
-        // if key is not found in the array then return -1
+        // if key is not found in the array, then return -1
         return -1;
     }
 
@@ -74,8 +78,14 @@ public class SearchElementSortedRotatedArray2 {
         System.out.println("Given Array - ");
         System.out.println(Arrays.toString(array));
 
-        int key = 1;
+        int key = 0;
         int index = searchElement(array, 0, array.length-1, key);
-        System.out.println("The key " + key + " is found on index " + index + " of the array");
+
+        if (index != -1){
+            System.out.println("The key " + key + " is found on index " + index + " of the array");
+        }
+        else {
+            System.out.println("Element Not Found");
+        }
     }
 }
