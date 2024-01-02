@@ -15,7 +15,7 @@ import java.util.Arrays;
  * - store the current element in large if it is not equal to last element in the array, break
  * - print both the variables, large and small
  * <p>
- * Time Complexity - O(n)
+ * Time Complexity - O(nlogn), due to sorting
  * Auxiliary space - O(1)
  */
 
